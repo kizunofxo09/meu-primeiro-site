@@ -1,13 +1,13 @@
-/* Controle de zoom/escala da página - 67% do Chrome */
+/* Controle de zoom/escala da página - 85% do Chrome */
 body {
-    zoom: 0.67; /* 67% - Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
+    zoom: 0.85; /* 85% - Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
     
     /* Alternativa usando transform (funciona em mais navegadores) */
-    transform: scale(0.67);
+    transform: scale(0.85);
     transform-origin: 0 0; /* Define o ponto de origem da escala */
     
     /* Ajustar largura para compensar a redução */
-    width: 149%; /* Compensa a redução de 0.67 (100/0.67 = 149) */
+    width: 118%; /* Compensa a redução de 0.85 (100/0.85 = 118) */
     
     margin: 0;
     padding: 0;
@@ -16,17 +16,17 @@ body {
 /* Se quiser aplicar apenas em telas menores */
 @media screen and (max-width: 768px) {
     body {
-        zoom: 0.5;
-        transform: scale(0.5);
-        width: 200%; /* 100/0.5 */
+        zoom: 0.75;
+        transform: scale(0.75);
+        width: 133%; /* 100/0.75 */
     }
 }
 
 /* Se quiser aplicar apenas em telas maiores */
 @media screen and (min-width: 1200px) {
     body {
-        zoom: 0.67;
-        transform: scale(0.67);
-        width: 149%; /* 100/0.67 */
+        zoom: 0.85;
+        transform: scale(0.85);
+        width: 118%; /* 100/0.85 */
     }
 }
