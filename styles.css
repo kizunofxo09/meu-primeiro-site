@@ -1,0 +1,32 @@
+/* Controle de zoom/escala da página - 33% do Chrome */
+body {
+    zoom: 0.33; /* 33% - Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
+    
+    /* Alternativa usando transform (funciona em mais navegadores) */
+    transform: scale(0.33);
+    transform-origin: 0 0; /* Define o ponto de origem da escala */
+    
+    /* Ajustar largura para compensar a redução */
+    width: 303%; /* Compensa a redução de 0.33 (100/0.33 = 303) */
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* Se quiser aplicar apenas em telas menores */
+@media screen and (max-width: 768px) {
+    body {
+        zoom: 0.25;
+        transform: scale(0.25);
+        width: 400%; /* 100/0.25 */
+    }
+}
+
+/* Se quiser aplicar apenas em telas maiores */
+@media screen and (min-width: 1200px) {
+    body {
+        zoom: 0.33;
+        transform: scale(0.33);
+        width: 303%; /* 100/0.33 */
+    }
+}
