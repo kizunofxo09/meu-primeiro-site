@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(img);
     
 
-    document.body.style.zoom = "0.85";
-    document.body.style.transform = "scale(0.85)";
+    document.body.style.zoom = "0.67";
+    document.body.style.transform = "scale(0.67)";
     document.body.style.transformOrigin = "0 0";
+
 });
